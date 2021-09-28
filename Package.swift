@@ -9,12 +9,7 @@ let package = Package(
     .library(name: "MungoHealer", targets: ["MungoHealer"])
   ],
   targets: [
-    .target(
-      name: "MungoHealer",
-      resources: [
-        .process("Frameworks/SupportingFiles")
-      ]
-    ),
+    .target(name: "MungoHealer"),
     .testTarget(
       name: "MungoHealerTests",
       dependencies: ["MungoHealer"]
