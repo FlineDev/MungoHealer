@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
   name: "MungoHealer",
   defaultLocalization: "en",
-  platforms: [.iOS(.v14), .tvOS(.v14), .watchOS(.v7), .macOS(.v11)],
+  platforms: [.iOS(.v10), .tvOS(.v10), .watchOS(.v4), .macOS(.v10_15)],
   products: [
     .library(name: "MungoHealer", targets: ["MungoHealer"])
   ],
