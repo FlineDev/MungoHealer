@@ -1,22 +1,18 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/JamitLabs/MungoHealer/stable/Logo.png"
+    <img src="https://raw.githubusercontent.com/Flinesoft/MungoHealer/main/Logo.png"
       width=600>
 </p>
 
 <p align="center">
-    <a href="https://app.bitrise.io/app/fbdb7fe2d4879760">
-        <img src="https://app.bitrise.io/app/fbdb7fe2d4879760/status.svg?token=bXijt_o5Fsl1E8cqtrrXLw&branch=stable"
-             alt="Build Status">
+    <a href="https://github.com/Flinesoft/MungoHealer/releases">
+        <img src="https://img.shields.io/badge/Version-0.3.3-blue.svg"
+             alt="Version: 0.3.3">
     </a>
-    <a href="https://github.com/JamitLabs/MungoHealer/releases">
-        <img src="https://img.shields.io/badge/Version-0.3.2-blue.svg"
-             alt="Version: 0.3.2">
-    </a>
-    <img src="https://img.shields.io/badge/Swift-4.2-FFAC45.svg"
-         alt="Swift: 4.2">
+    <img src="https://img.shields.io/badge/Swift-5.0-FFAC45.svg"
+         alt="Swift: 5.3">
     <img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS-FF69B4.svg"
         alt="Platforms: iOS | tvOS">
-    <a href="https://github.com/JamitLabs/MungoHealer/blob/stable/LICENSE">
+    <a href="https://github.com/Flinesoft/MungoHealer/blob/main/LICENSE">
         <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg"
               alt="License: MIT">
     </a>
@@ -25,7 +21,7 @@
 <p align="center">
     <a href="#installation">Installation</a>
   • <a href="#usage">Usage</a>
-  • <a href="https://github.com/JamitLabs/MungoHealer/issues">Issues</a>
+  • <a href="https://github.com/Flinesoft/MungoHealer/issues">Issues</a>
   • <a href="#contributing">Contributing</a>
   • <a href="#license">License</a>
 </p>
@@ -89,9 +85,7 @@ func login(success: (String) -> Void) {
 
 ## Installation
 
-Installing via [Carthage](https://github.com/Carthage/Carthage#carthage) & [CocoaPods](https://guides.cocoapods.org/using/getting-started.html) are both supported.
-
-Support for SPM is currently not possible as this framework uses UIKit.
+MungoHealer currently only supports installation via [SwiftPM](https://github.com/apple/swift-package-manager).
 
 ## Usage
 
@@ -341,7 +335,7 @@ While starting with the `AlertLogErrorHandler` is recommended by default, you mi
 - `handle(fatalError: FatalError)`: Called for fatal error types – App should crash at the end of this method.
 - `handle(healableError: HealableError)`: Calles for healable error types.
 
-See the implementation of `AlertLogErrorHandler` [here](https://github.com/JamitLabs/MungoHealer/blob/stable/Frameworks/MungoHealer/ErrorHandlers/AlertLogErrorHandler.swift) for a working example.
+See the implementation of `AlertLogErrorHandler` [here](https://github.com/Flinesoft/MungoHealer/blob/main/Frameworks/MungoHealer/ErrorHandlers/AlertLogErrorHandler.swift) for a working example.
 
 Note that you don't have to use a single global variable named `mungo` as in the example above. You could also write your own Singleton with multiple `MungoHealer` objects, each with a different `ErrorHandler` type. This way you could choose to either show an alert or your custom handling, depending on the context. The Singleton might look something like this:
 
@@ -404,7 +398,7 @@ So as you can see, used wisely, MungoHealer can help to make your code **cleaner
 
 ## Contributing
 
-See the file [CONTRIBUTING.md](https://github.com/JamitLabs/MungoHealer/blob/stable/CONTRIBUTING.md).
+See the file [CONTRIBUTING.md](https://github.com/Flinesoft/MungoHealer/blob/main/CONTRIBUTING.md).
 
 
 ## License

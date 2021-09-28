@@ -1,21 +1,18 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
-    name: "MungoHealer",
-    products: [
-        .library(name: "MungoHealer", targets: ["MungoHealer"])
-    ],
-    targets: [
-        .target(
-            name: "MungoHealer",
-            path: "Frameworks/MungoHealer",
-            exclude: ["Frameworks/SupportingFiles"]
-        ),
-        .testTarget(
-            name: "MungoHealerTests",
-            dependencies: ["MungoHealer"],
-            exclude: ["Tests/SupportingFiles"]
-        )
-    ]
+  name: "MungoHealer",
+  defaultLocalization: "en",
+  platforms: [.iOS(.v14), .tvOS(.v14), .watchOS(.v7), .macOS(.v11)],
+  products: [
+    .library(name: "MungoHealer", targets: ["MungoHealer"])
+  ],
+  targets: [
+    .target(name: "MungoHealer"),
+    .testTarget(
+      name: "MungoHealerTests",
+      dependencies: ["MungoHealer"]
+    )
+  ]
 )

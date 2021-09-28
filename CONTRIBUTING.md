@@ -10,12 +10,7 @@ This section will tell you how you can get started contributing to MungoHealer.
 
 Before you start developing, please make sure you have the following tools installed on your machine:
 
-- Xcode 10.0+
-- [SwiftLint](https://github.com/realm/SwiftLint)
-- [ProjLint](https://github.com/JamitLabs/ProjLint)
-- [Beak](https://github.com/yonaskolb/Beak)
-
-This will make sure the Linux CI can also find and run all the tests.
+- Xcode 12.5+
 
 ### Commit Messages
 
