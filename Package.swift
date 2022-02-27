@@ -9,7 +9,12 @@ let package = Package(
     .library(name: "MungoHealer", targets: ["MungoHealer"])
   ],
   targets: [
-    .target(name: "MungoHealer"),
+    .target(
+      name: "MungoHealer",
+      resources: [
+        .process("Resources/Localizables"),
+      ]
+    ),
     .testTarget(
       name: "MungoHealerTests",
       dependencies: ["MungoHealer"]
